@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .head {
+        width: 1903px;
+        height: 92px;
+    }
+
+    .head-left {
+        float: left;
+        margin: 23px 77px 21px 77px;
+    }
+
+    .head-right {
+        float: right;
+        display: block;
+        width: 735px;
+        height: 94px;
+    }
+
+    .head-right li {
+        float: left;
+        display: block;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        font-size: 18px;
+        list-style: none;
+
+    }
+
+    .head-right li a {
+        color: #666666;
+        text-decoration: none;
+    }
+
+    .home {
+        width: 1903px;
+        height: 903px;
+        background-image: url("img/background1.png");
+    }
+
+    .home div {
+        width: 1903px;
+        height: 700px;
+        text-align: center;
+        padding: 310px 50px 50px 50px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .home div h3 {
+        font-size: 45px;
+    }
+
+    .home div h1 {
+        font-size: 102px;
+    }
+
+    .home div h4 {
+        font-size: 27px;
+    }
+
+    .home button {
+        width: 294px;
+        height: 70px;
+        margin: 0px 800px;
+        border: none;
+        outline: none;
+        font-size: 21px;
+        color: #fff;
+        background-color: #7dc678;
+        font-weight: bolder;
+    }
+
+    .home button:hover {
+        color: #666666;
+        background-color: #fff;
+        transition: all 0.8s;
+    }
+
+    .about {
+        width: 1903px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .about h2 {
+        margin: 150px 0px 0px 0px;
+        font-size: 69px;
+        color: #7ac674;
+    }
+
+    .about p {
+        margin: 40px 0px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: #7e8287;
+        font-weight: bolder;
+    }
+
+    .service {
+        width: 1903px;
+        height: 600px;
+        padding: 100px 50px;
+        box-sizing: border-box;
+    }
+
+    .service div {
+        float: left;
+        width: 442px;
+        height: 384px;
+        padding: 50px 100px;
+        box-sizing: border-box;
+    }
+
+    .service-2,
+    .service-3 {
+        border-left: 1px solid #c6c9c9;
+        border-right: 1px solid #c6c9c9;
+    }
+
+    .service div img {
+        margin: 0px 80px;
+    }
+
+    .service div h5 {
+        margin: 20px 0px;
+        text-align: center;
+        font-size: 24px;
+        color: #000000;
+
+    }
+
+    .service div p {
+        margin: 10px 0px;
+        text-align: center;
+        font-size: 16px;
+        color: #7e8287;
+    }
+
+    .work {
+        width: 1903px;
+        height: 904px;
+    }
+
+    .work-left {
+        float: left;
+        width: 847px;
+        height: 905px;
+        background-color: #f8f8f8;
+    }
+
+    .work-right {
+        float: right;
+    }
+
+    .work-lefthead {
+        width: 847px;
+        height: 250px;
+        padding: 100px 0px 0px 100px;
+        box-sizing: border-box;
+    }
+
+    .work-lefthead h3 {
+        font-size: 69px;
+        color: #7dc678;
+    }
+
+    .work-lefthead p {
+        margin: 20px 0px;
+        letter-spacing: 1px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #7e8287;
+    }
+
+    .worktext {
+        float: left;
+        width: 423px;
+        height: 327px;
+        box-sizing: border-box;
+        padding: 50px 95px;
+    }
+
+    .worktext h4 {
+        margin: 20px 0px;
+        font-size: 24px;
+        color: #7e8287;
+    }
+
+    .worktext p {
+        margin: 10px 0px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #7e8287;
+    }
+
+    .photo {
+        width: 1903px;
+        height: 1252px;
+    }
+
+    .photo-head {
+        width: 1903px;
+        height: 474px;
+        padding: 150px 510px 0px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .photo-head h4 {
+        font-size: 69px;
+        color: #7dc678;
+
+    }
+
+    .photo-head p {
+        margin: 30px 0px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #7e8287;
+    }
+
+    .photo-img {
+        float: left;
+        width: 475px;
+        height: 389px;
+    }
+
+    #photo-imgdiv {
+        background-image: url("img/background3.png");
+        background-size: cover;
+    }
+
+    .photo-img div {
+        width: 399px;
+        height: 315px;
+        margin: 40px auto;
+        text-align: center;
+        background-color: rgba(132, 192, 124, 0.8);
+    }
+
+    #photo-imgdiv h5 {
+        padding: 85px 0px 15px 0px;
+        font-size: 24px;
+        color: #ffffff;
+    }
+
+    #photo-imgdiv p {
+        line-height: 40px;
+        font-size: 20px;
+        color: #ffffff;
+
+    }
+
+    .problem {
+        width: 1903px;
+        height: 400px;
+    }
+
+    .problem-left {
+        float: left;
+        width: 951px;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 159px 0px 0px 304px;
+    }
+
+    .problem-left div {
+        float: left;
+        width: 100px;
+        height: 100%;
+        margin: 0px 50px;
+    }
+
+    .problem-left div a {
+        color: #666666;
+        text-decoration: transparent;
+        font-size: 24px;
+        font-weight: bolder;
+
+    }
+
+    .problem-left div ul {
+        margin: 30px 0px 0px 0px;
+    }
+
+    .problem-left div ul li {
+        margin: 10px 0px;
+        list-style: none;
+    }
+
+    .problem-left div ul li a {
+        color: #b7b7b7;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .problem-right {
+        float: left;
+        width: 951px;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 159px 0px 0px 0px;
+    }
+
+    .problem-right a {
+        padding:0px 60px 0px 0px;
+        color: #666666;
+        text-decoration: transparent;
+        font-size: 24px;
+        font-weight: bolder;
+
+    }
+
+    .map {
+        border-right: 2px solid #666666;
+
+    }
+
+    .problem-right p {
+        font-size: 20px;
+        color: #b7b7b7;
+    }
+
+    .address {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .phone {
+        padding: 15px 0px 0px 0px;
+    }
+
+    .bottom {
+        width: 1903px;
+        height: 105px;
+        padding: 35px 0px;
+        box-sizing: border-box;
+        background-color: #f5f6f8;
+        text-align: center;
+        line-height: 30px;
+        color: #333333;
+    }
+
+    .bottom a {
+        text-decoration: transparent;
+        color: #333333;
+    }
+</style>
+
+<body>
+    <div class="head">
+        <img class="head-left" src="img/logo.png" alt="">
+        <ul class="head-right">
+            <li><a href="javascript:;">HOME</a></li>
+            <li><a href="#aboutme">ABOUT ME</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#work">MY WORK</a></li>
+            <li><a href="#problem">CONTACT ME</a></li>
+        </ul>
+    </div>
+    <div class="home">
+        <div>
+            <h3>Lorem ipsum dolor sit iusmod tempor</h3>
+            <h1>I N C I D I D U N T B O R E</h1>
+            <h4>Orem ipsum dolor sit amet, consectetur</h4>
+        </div>
+        <button>了解更多</button>
+    </div>
+    <div id="aboutme" class="about">
+        <h2>ABOUT ME</h2>
+        <p>~~~~~~~~::~~~~~~~~</p>
+        <p>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</p>
+        <p>文案文案文案文案文案文案文案文案文案</p>
+        <p>文案文案文案文案文案文案文案文案文案文案文案文案文案。</p>
+    </div>
+    <div id="service" class="service">
+        <div class="service-1">
+            <img src="img/ion1.png" alt="ion1">
+            <h5>Title goes here</h5>
+            <p>text heretext here.text heretext here.</p>
+            <p>text here.text here.</p>
+            <p>text heretext here.text heretext here.</p>
+        </div>
+        <div class="service-2">
+            <img src="img/ion2.png" alt="ion2">
+            <h5>Title goes here</h5>
+            <p>text heretext here.text heretext here.</p>
+            <p>text here.text here.</p>
+            <p>text heretext here.text heretext here.</p>
+        </div>
+        <div class="service-3">
+            <img src="img/ion3.png" alt="ion3">
+            <h5>Title goes here</h5>
+            <p>text heretext here.text heretext here.</p>
+            <p>text here.text here.</p>
+            <p>text heretext here.text heretext here.</p>
+        </div>
+        <div class="service-4">
+            <img src="img/ion4.png" alt="ion4">
+            <h5>Title goes here</h5>
+            <p>text heretext here.text heretext here.</p>
+            <p>text here.text here.</p>
+            <p>text heretext here.text heretext here.</p>
+        </div>
+
+    </div>
+    <div id="work" class="work">
+        <div class="work-left">
+            <div class="work-lefthead">
+                <h3>我们的服务</h3>
+                <p>~~~~~::~~~~~</p>
+            </div>
+            <div class="worktext">
+                <img src="img/Vector Smart Object.png" alt="">
+                <h4>标题标题</h4>
+                <p>文案文案文案文案文案文案文案</p>
+                <p>文案文案文案文案文案</p>
+                <p>文案文案文案文案文案文案.</p>
+            </div>
+            <div class="worktext">
+                <img src="img/Vector Smart Object2.png" alt="">
+                <h4>标题标题</h4>
+                <p>文案文案文案文案文案文案文案</p>
+                <p>文案文案文案文案文案</p>
+                <p>文案文案文案文案文案文案.</p>
+            </div>
+            <div class="worktext">
+                <img src="img/Vector Smart Object3.png" alt="">
+                <h4>标题标题</h4>
+                <p>文案文案文案文案文案文案文案</p>
+                <p>文案文案文案文案文案</p>
+                <p>文案文案文案文案文案文案.</p>
+            </div>
+            <div class="worktext">
+                <img src="img/Vector Smart Object4.png" alt="">
+                <h4>标题标题</h4>
+                <p>文案文案文案文案文案文案文案</p>
+                <p>文案文案文案文案文案</p>
+                <p>文案文案文案文案文案文案.</p>
+            </div>
+        </div>
+        <div class="work-right">
+            <img src="img/background2.png" alt="">
+        </div>
+    </div>
+    <div class="photo">
+        <div class="photo-head">
+            <h4>我们的工作</h4>
+            <p>~~~~~::~~~~~</p>
+            <p>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</p>
+            <p>文案文案文案文案文案文案文案文案文案。</p>
+        </div>
+        <div>
+            <img class="photo-img" src="img/photo1.png" alt="">
+            <img class="photo-img" src="img/photo2.png" alt="">
+            <img class="photo-img" src="img/photo1.png" alt="">
+            <img class="photo-img" src="img/photo2.png" alt="">
+            <img class="photo-img" src="img/photo2.png" alt="">
+            <div id="photo-imgdiv" class="photo-img">
+                <div>
+                    <h5>Title goes here</h5>
+                    <p>onsecntetur adipisicing elit,sedo</p>
+                    <p>eiusmod tempor incidi</p>
+                    <p>et dolorerserss eerhfre mag.</p>
+                </div>
+            </div>
+            <img class="photo-img" src="img/photo2.png" alt="">
+            <img class="photo-img" src="img/photo1.png" alt="">
+        </div>
+    </div>
+    <div id="problem" class="problem">
+        <div class="problem-left">
+            <div>
+                <a href="javascript:;">常见问题</a>
+                <ul>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="javascript:;">常见问题</a>
+                <ul>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="javascript:;">常见问题</a>
+                <ul>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="problem-right">
+            <a class="map" href="javascript:;">网站地图</a>
+            <a href="javascript:;">关于我们</a>
+            <p class="address">地址:北京市北京市北京市北京市北京市北京市北京市北京市北京市</p>
+            <p class="phone">服务热线:222-22222222</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>CopyRight©<a href="javascript:;">www.58pic.com</a>,All Rights Reserved XX有限公司 版权所有 豫ICP备0000000号</p>
+        <p>联系电话: 000-00000000 技术支持: xxx网络公司</p>
+    </div>
+</body>
+
+</html>
