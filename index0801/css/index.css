@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    width: 1903px;
+    height: 850px;
+    background-color: #23232e;
+}
+
+.home-body {
+    width: 544px;
+    height: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-body-logo {
+    margin-top: 80px;
+}
+
+.home-body-h1 {
+    margin-top: 163px
+}
+
+.home-body p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.home-body-p1 {
+    margin-top: 65px;
+}
+
+.home-body-p2 {
+    margin-top: 11px;
+}
+
+.home-body-footer {
+    margin-top: 185px;
+}
+
+.jobs {
+    width: 1903px;
+    height: 1039px;
+    background-image: url("../img/bgc1.png");
+}
+
+.work {
+    width: 1903px;
+    height: 1356px;
+    background-color: #23232e;
+}
+
+.photo {
+    width: 1903px;
+    height: 1347px;
+    background-image: url("../img/bgc2.png");
+}
+
+.search {
+    width: 1903px;
+    height: 800px;
+    background-color: #23232e;
+}
+
+.about {
+    width: 1903px;
+    height: 398px;
+    background-image: url("../img/bgc3.png");
+}
+
+.jobs-text {
+    width: 807px;
+    height: 369px;
+    padding: 125px 548px 114px 548px;
+}
+
+.jobs-text p {
+    text-align: center;
+    font-size: 30px;
+    color: #464b4f;
+    margin: 26px 0px;
+    text-indent:14px;
+}
+
+.jobs-img {
+    width: 426px;
+    height: 58px;
+    margin: 0 auto;
+}
+
+.jobs-bottom {
+    width: 870px;
+    height: 155px;
+    margin: 0 auto;
+}
+
+.jobs-bottom div {
+    float: left;
+    width: 276px;
+    height: 155px;
+    margin: 99px 7px 0px;
+}
+
+.jobs-bottom div h4 {
+    font-size: 18px;
+    color: #464b4f;
+    margin-bottom: 31px;
+}
+
+.jobs-bottom div p {
+    font-size: 18px;
+    color: #888a8b;
+    line-height: 30px;
+}
+
+.work img {
+    width: 387px;
+    height: 58px;
+    padding: 125px 758px 60px 758px;
+}
+
+.work-option {
+    width: 616px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.work-option div {
+    float: left;
+    height: 30px;
+    margin: 0px 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.work-option div a {
+    font-size: 14px;
+    padding: 0px 0px 5px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: transparent;
+}
+
+.work-option div a:hover {
+    border-bottom: 2px solid #7b77c9;
+}
+
+.work-body {
+    width: 960px;
+    height: 805px;
+    margin: 52px auto 86px;
+    box-sizing: border-box;
+}
+
+.work-photo div {
+    width: 300px;
+    height: 300px;
+    background-color: #7b77c9;
+}
+
+.work-photo {
+    float: left;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.work-photo h3 {
+    margin: 30px 0px 0px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.work-photo p {
+    margin: 14px 0px 49px;
+    font-size: 14px;
+    color: #818baa;
+}
+
+.work button {
+    width: 210px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #7b77c9;
+    border: none;
+    outline: none;
+    margin: 0px 843px;
+}
+
+.photo img {
+    width: 591px;
+    height: 58px;
+    padding: 125px 656px 58px;
+}
+
+.photo p {
+    width: 700px;
+    height: 208px;
+    padding: 0px 601px 52px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 30px;
+    color: #888a8b;
+}
+
+.photo-photo {
+    width: 960px;
+    height: 640px;
+    margin: 0 auto;
+}
+
+.photo-photo div {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: #7b77c9;
+}
+
+.photo button {
+    width: 210px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #7b77c9;
+    border: none;
+    outline: none;
+    margin: 77px 843px 0px;
+}
+
+.search img {
+    width: 85px;
+    height: 42px;
+    padding: 265px 909px 60px;
+}
+
+.search p {
+    width: 403px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.search-inp {
+    margin: 60px 651px 0px;
+    height: 60px;
+    font-size: 0;
+}
+
+.search-inp input {
+    float: left;
+    width: 380px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-inp button {
+    width: 210px;
+    height: 60px;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #7b77c9;
+    border: none;
+    outline: none;
+}
+
+.about-icon {
+    padding: 100px 701px 102px;
+}
+
+.about-icon a {
+    margin: 0px 40px;
+}
+
+.about p {
+    margin: 0px 0px 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #7c7c7c;
+}
