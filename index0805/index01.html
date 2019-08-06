@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>两边展开</title>
+  <style>
+    .center {
+      position: relative;
+      width: 1px;
+      height: 5px;
+      margin: 200px auto;
+      background: #f00;
+    }
+    .left,.right {
+      position: absolute;
+      top: 0;
+      width: 500px;
+      height: 5px;
+      transform: scaleX(0);
+      transition:  300ms;
+    }
+    .left {
+      background: #f00;
+      right: -500px;
+      transform-origin: left center;
+    }
+    .right {
+      background: #f00;
+      left: -500px;
+      transform-origin: right center;
+    }
+    .center:hover .left,
+    .center:hover .right {
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+<body>
+  <div class='center'>
+    <div class='left'></div>
+    <div class='right'></div>
+  </div>
+</body>
+</html>

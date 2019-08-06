@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 1903px;
+            height: 936px;
+        }
+
+        .streetsign {
+            position: fixed;
+            top: 90px;
+            left: 0px;
+            width: 475px;
+            height: 848px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 100px 50px;
+            box-sizing: border-box;
+        }
+
+        .show {
+            width: 330px;
+            height: 95px;
+            margin: 20px 20px 40px;
+            padding: 0px 80px 40px 0px;
+            box-sizing: border-box;
+            background-image: url("img/nav-item.png");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+
+        }
+
+        .show:hover {
+            background-image: url("img/nav-item-highlight.png");
+            transition: all 0.5s
+        }
+
+        .show:hover h2 {
+            color: #33ccff;
+            transition: all 0.5s
+        }
+
+        .show:hover div {
+            border: 1px solid #33ccff;
+            transition: all 0.5s
+        }
+
+        .show div {
+            float: left;
+            width: 55px;
+            height: 55px;
+            border-radius: 35px;
+            border: 1px solid #fff;
+            margin: 0px 35px 0px 0px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .show h2 {
+            margin: 15px 0px;
+            float: left;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .body1 {
+            /* display: none; */
+            width: 1903px;
+            height: 1200px;
+            padding: 300px 650px;
+            box-sizing: border-box;
+            text-align: left;
+            background-image: url("img/constructive_bg_01.jpg");
+            background-repeat: no-repeat;
+            transition: all 1s;
+        }
+
+        .body1 h1 {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .body1 p {
+            font-size: 20px;
+            color: #fff;
+            line-height: 40px;
+            margin-bottom: 48px;
+        }
+
+        .body1 button {
+            width: 201px;
+            height: 63px;
+            font-size: 20px;
+            color: #fff;
+            padding: 15px 50px;
+            background: none;
+            border: 1px solid #fff;
+            outline: none;
+        }
+
+        .body1 button:hover {
+            color: #33ccff;
+            border: 1px solid #33ccff;
+            transition: all 0.5s;
+        }
+
+        .body2 {
+            display: none;
+            width: 1903px;
+            height: 1200px;
+            padding: 191px 0px 0px 594px;
+            box-sizing: border-box;
+            text-align: left;
+            background-image: url("img/constructive_bg_02.jpg");
+            background-repeat: no-repeat;
+            transition: all 1s;
+        }
+
+        .body3 {
+            display: none;
+            width: 1903px;
+            height: 1200px;
+            padding: 221px 0px 0px 594px;
+            box-sizing: border-box;
+            text-align: left;
+            background-image: url("img/constructive_bg_03.jpg");
+            background-repeat: no-repeat;
+            transition: all 1s;
+        }
+
+        .body3h2 {
+            font-size: 32px;
+            color: #fff;
+            margin: 0px 15px 25px;
+
+        }
+
+        .body3div {
+            float: left;
+            width: 493px;
+            height: 208px;
+            margin: 15px;
+            padding: 25px;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .body3div div {
+            float: left;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            margin: 0px 24px 0px 0px;
+        }
+
+        .body3div h2 {
+            float: left;
+            width: 307px;
+            height: 33px;
+            font-size: 28px;
+            color: #fff;
+            margin: 0px 0px 8px;
+            text-align: left;
+        }
+
+        .body3div p {
+            width: 307px;
+            height: 105px;
+            line-height: 25px;
+            float: left;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .body4 {
+            display: none;
+            width: 1903px;
+            height: 1200px;
+            padding: 160px 0px 0px 570px;
+            box-sizing: border-box;
+            background-image: url("img/constructive_bg_04.jpg");
+            background-repeat: no-repeat;
+            transition: all 1s;
+        }
+
+        .body4div {
+            width: 1046px;
+            height: 645px;
+            padding: 60px 55px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .body4div h2 {
+            width: 906px;
+            height: 38px;
+            font-size: 32px;
+            color: #fff;
+            margin: 0px 15px 8px;
+        }
+
+        .body4div-inp {
+            float: left;
+            width: 468px;
+            height: 455px;
+            padding: 0px 15px;
+            box-sizing: border-box;
+        }
+
+        .body4div-text {
+            float: left;
+            width: 468px;
+            height: 455px;
+            padding: 0px 15px;
+            box-sizing: border-box;
+        }
+
+        .inp-Name {
+            width: 438px;
+            height: 56px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            background: none;
+            outline: none;
+            border: 1px solid #fff;
+        }
+
+        .inp-Email {
+            width: 438px;
+            height: 56px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            background: none;
+            outline: none;
+            border: 1px solid #fff;
+        }
+
+        .inp-Message {
+            width: 438px;
+            height: 232px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            background: none;
+            outline: none;
+            border: 1px solid #fff;
+        }
+
+        .inp-button {
+            width: 154px;
+            height: 63px;
+            color: #fff;
+            background: none;
+            margin-left: 284px;
+            padding: 15px 43px;
+            box-sizing: border-box;
+            font-size: 20px;
+            outline: none;
+            border: 1px solid #fff;
+        }
+
+        .inp-Name:focus,
+        .inp-Email:focus,
+        .inp-Message:focus {
+            border: 1px solid #33ccff;
+            transition: all 0.5s;
+        }
+
+        .inp-button:hover {
+            color: #33ccff;
+            border: 1px solid #33ccff;
+            transition: all 0.5s;
+        }
+
+        .body4div-text p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: #fff;
+            line-height: 35px;
+        }
+
+        .body2 h2 {
+            width: 940px;
+            height: 38px;
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 50px;
+
+        }
+
+        .body2div {
+            position: relative;
+            width: 960px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        #body2-img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1920px;
+            height: 400px;
+            transition: all 1s;
+        }
+
+        #body2-img img {
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .console {
+            width: 90px;
+            height: 25px;
+            margin: 0 450px;
+        }
+
+        .console ul li {
+            list-style: none;
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin: 10px 5px;
+            border-radius: 10px;
+            background-color: rgb(73, 73, 73);
+        }
+
+        .console ul li:hover {
+            background-color: #000;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="streetsign">
+        <div class="show">
+            <div></div>
+            <h2>Introduction</h2>
+        </div>
+        <div class="show">
+            <div></div>
+            <h2>Our Proudcts</h2>
+        </div>
+        <div class="show">
+            <div></div>
+            <h2>Our Company</h2>
+        </div>
+        <div class="show">
+            <div></div>
+            <h2>Contact US</h2>
+        </div>
+    </div>
+    <div>
+        <div class="body1 home">
+            <h1>Constructive Design</h1>
+            <p>Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui
+                commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.
+            </p>
+            <button>Continue...</button>
+        </div>
+        <div class="body2 home">
+            <h2>Our Products</h2>
+            <div class="body2div">
+                <div id="body2-img">
+                    <img src="img/gallery-img-01-tn.jpg" alt="">
+                    <img src="img/gallery-img-02-tn.jpg" alt="">
+                    <img src="img/gallery-img-03-tn.jpg" alt="">
+                    <img src="img/gallery-img-04-tn.jpg" alt="">
+                    <img src="img/gallery-img-05-tn.jpg" alt="">
+                    <img src="img/gallery-img-06-tn.jpg" alt="">
+                </div>
+            </div>
+            <div class="console">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body3 home">
+            <h2 class="body3h2">Our Company</h2>
+            <div class="body3div">
+                <div></div>
+                <h2>HTML Templates</h2>
+                <p>We provide a variety of templates for you at no cost. Please spread a word about Tooplate website.
+                    Thank you.</p>
+            </div>
+            <div class="body3div">
+                <div></div>
+                <h2>Free Images</h2>
+                <p>Photos by Unsplash.com website, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis
+                    viverra.</p>
+            </div>
+            <div class="body3div">
+                <div></div>
+                <h2>Phasellus eleifend</h2>
+                <p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet
+                    facilisis viverra.</p>
+            </div>
+            <div class="body3div">
+                <div></div>
+                <h2>Phasellus eleifend</h2>
+                <p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet
+                    facilisis viverra.</p>
+            </div>
+        </div>
+        <div class="body4 home">
+            <div class="body4div">
+                <h2>Contact Us</h2>
+                <div class="body4div-inp">
+                    <input type="text" class="inp-Name" placeholder="Name">
+                    <input type="text" class="inp-Email" placeholder="Email">
+                    <input type="text" class="inp-Message" placeholder="Message">
+                    <button class="inp-button">Submit</button>
+                </div>
+                <div class="body4div-text">
+                    <p>Aliquam interdum, nisl sedd faucibus tempor, massa velit <br>
+                        laoreet ipsum, et faucibus sapien magnaat enim. <br>
+                        Suspendisse a dictum tortor.</p>
+                    <p>Curabitur venenatis leo in augue convallis, vulputate <br>
+                        sollicitudin ex maximus.</p>
+                    <p>120-240 Aliquam nec neque augue<br>
+                        Suspendisse tincidunt nunc,<br>
+                        vitae sagis justo 11000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/jquery-3.4.1.js"></script>
+    <script>
+        var index = 0;
+
+        var allLi = document.getElementsByTagName("li");
+        
+        var imgList = document.getElementById("body2-img");
+
+        allLi[index].style.backgroundColor = "black";
+
+        for (var i=0 ; i < allLi.length ; i++) {
+            
+            allLi[i].num = i; 
+
+            allLi[i].onclick = function(){
+                
+                index = this.num;
+
+                imgList.style.left = -320*index + "px";
+
+                setLi()
+            }
+        }
+
+        function setLi(){
+            for(var i=0 ; i < allLi.length ; i++){
+                allLi[i].style.backgroundColor = "";
+            }
+            allLi[index].style.backgroundColor = "black";
+        }
+
+
+        $(".show").click(function(){
+            
+            var num = $(this).index();
+
+            var home = $(".home");
+
+
+            home.css("display","none");
+           
+            $(home[num]).css("display","block");
+        })
+
+    </script>
+</body>
+
+</html>
